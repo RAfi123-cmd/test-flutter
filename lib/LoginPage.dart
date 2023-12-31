@@ -17,6 +17,11 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/images/logo-buku.dart', // Sesuaikan dengan path gambar Anda
+              width: 150,
+              height: 150,
+            ),
             TextFormField(
               controller: emailController,
               decoration: const InputDecoration(labelText: 'Email'),

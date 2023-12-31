@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/DaftarBukuPage.dart';
 import 'package:flutter_project/LoginPage.dart';
 import 'package:flutter_project/RegisterPage.dart';
 import 'package:get/get.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/register', page: () => RegisterPage()),
         // Tambahkan definisi rute untuk halaman home jika diperlukan
         GetPage(name: '/home', page: () => HomePage()),
+        GetPage(name: '/daftar-buku', page: () => DaftarBukuPage()),
       ],
     );
   }

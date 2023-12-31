@@ -3,7 +3,9 @@ import 'package:dio/dio.dart';
 
 class AuthController extends GetxController {
   RxBool isLoggedIn = false.obs;
-  final Dio _dio = Dio(); // Sesuaikan dengan konfigurasi Dio Anda
+  final Dio _dio = Dio();
+
+  var token; // Sesuaikan dengan konfigurasi Dio Anda
 
   Future<void> login(String email, String password) async {
     try {

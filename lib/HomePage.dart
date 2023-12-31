@@ -13,7 +13,20 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/home_image.png', // Sesuaikan dengan path gambar Anda
+              width: 200,
+              height: 200,
+            ),
             const Text('Selamat datang di halaman Home!'),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                // Navigasi ke halaman daftar buku
+                Get.toNamed('/daftar-buku');
+              },
+              child: const Text('Daftar Buku'),
+            ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
